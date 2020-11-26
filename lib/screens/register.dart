@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter/gestures.dart';
 
 class RegisterScreen extends StatelessWidget{
   @override
@@ -14,7 +16,12 @@ class RegisterScreen extends StatelessWidget{
         ),
         child: Stack(
           children: <Widget>[
-
+            ElevatedButton(
+              child: Text('Register'),
+            ),
+            ElevatedButton(
+              child: Text('Login'),
+            ),
           ],
         ),
       ),
