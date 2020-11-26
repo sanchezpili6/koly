@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class WelcomeScreen extends StatelessWidget{
   @override
@@ -28,7 +29,48 @@ class WelcomeScreen extends StatelessWidget{
                     ),
                   ),
                 ),
-                Text("data")
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: RaisedButton(
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        'SIGN UP',
+                        style: GoogleFonts.montserrat(
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black54
+                        )
+                      ),
+                    ),
+                    onPressed: (){},
+                    color: Colors.amberAccent,
+                    textColor: Colors.black54,
+                    splashColor: Colors.grey,
+                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                  )
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: RaisedButton(
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        'LOG IN ',
+                          style: GoogleFonts.montserrat(
+                              fontSize: 25,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black54
+                          )
+                      ),
+                    ),
+                    onPressed: (){},
+                    color: Colors.amberAccent,
+                    textColor: Colors.black54,
+                    splashColor: Colors.grey,
+                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                  )
+                ),
               ],
             ),
             Column(
