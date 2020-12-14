@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:koly/constants/colors.dart';
 
 class WelcomeScreen extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amber,
+      backgroundColor: kPrimaryColor,
       body: Center(
         child: Row(crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
@@ -44,9 +45,9 @@ class WelcomeScreen extends StatelessWidget{
                       ),
                     ),
                     onPressed: (){},
-                    color: Colors.amberAccent,
+                    color: kPrimaryContrastColor,
                     textColor: Colors.black54,
-                    splashColor: Colors.grey,
+                    splashColor: kPrimaryColor,
                     padding: EdgeInsets.symmetric(vertical: 10, horizontal: 5),
                   )
                 ),
@@ -65,9 +66,9 @@ class WelcomeScreen extends StatelessWidget{
                       ),
                     ),
                     onPressed: (){},
-                    color: Colors.amberAccent,
+                    color: kPrimaryContrastColor,
                     textColor: Colors.black54,
-                    splashColor: Colors.grey,
+                    splashColor: kPrimaryColor,
                     padding: EdgeInsets.symmetric(vertical: 10, horizontal: 5),
                   )
                 ),
