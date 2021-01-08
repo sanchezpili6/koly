@@ -2,7 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:koly/constants/colors.dart';
 
-class WelcomeScreen extends StatelessWidget{
+class WelcomeScreen extends StatefulWidget{
+  static const String id = 'welcome';
+
+  WelcomeScreen({Key key}) : super(key: key);
+
+  @override
+  _WelcomeScreen createState() => _WelcomeScreen();
+
+}
+
+class _WelcomeScreen extends State<WelcomeScreen>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(

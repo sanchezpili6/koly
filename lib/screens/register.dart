@@ -2,7 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/gestures.dart';
 
-class RegisterScreen extends StatelessWidget{
+class RegisterScreen extends StatefulWidget{
+  static const String id = 'register';
+
+  RegisterScreen({Key key}) : super(key: key);
+
+  @override
+  _RegisterScreen createState() => _RegisterScreen();
+
+}
+
+class _RegisterScreen extends State<RegisterScreen>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
